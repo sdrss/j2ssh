@@ -1,0 +1,17 @@
+# Eclipse Core
+.project
+.classpath
+.buildpath
+.settings
+.gitignore~
+.log
+.idea
+
+# Test Specific
+*.iml
+/idea/
+/.idea/
+/target/
+/test-output/
+/testNG/
+/bin/
