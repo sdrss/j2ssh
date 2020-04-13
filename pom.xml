@@ -1,33 +1,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>sshtools</groupId>
+	<groupId>com.github.sdrss</groupId>
 	<artifactId>j2ssh-core</artifactId>
 	<version>0.2.10</version>
 	<packaging>jar</packaging>
 	<name>j2ssh-core</name>
 	<scm>
-		<url></url>
-		<connection></connection>
-		<developerConnection></developerConnection>
+		<url>https://github.com/sdrss/j2ssh</url>
+		<connection>https://github.com/sdrss/j2ssh.git</connection>
+		<developerConnection>git@github.com:sdrss/j2ssh.git</developerConnection>
 	</scm>
-	<repositories>
-		<repository>
-			<id>artifactory</id>
-			<url>http://artifactory.uplab.in:8080/artifactory/</url>
-		</repository>
-	</repositories>
+	<url>https://github.com/sdrss/j2ssh</url>
 	<distributionManagement>
-		<repository>
-			<id>internal-repo</id>
-			<name>repo</name>
-			<url>http://artifactory.uplab.in:8080/artifactory/internal-upstream</url>
-		</repository>
 		<snapshotRepository>
-			<id>internal-repo</id>
-			<name>repo</name>
-			<url>http://artifactory.uplab.in:8080/artifactory/internal-upstream</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
+	<developers>
+		<developer>
+			<name>Socrates Sidereas</name>
+			<email>socrates.sidereas@gmail.com</email>
+		</developer>
+	</developers>
 	<build>
 		<finalName>${project.artifactId}-${project.version}</finalName>
 		<extensions>
